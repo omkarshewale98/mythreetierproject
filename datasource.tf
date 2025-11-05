@@ -17,7 +17,9 @@ data "aws_ami" "app-tier-ami" {
   most_recent = true
   owners      = ["self"]
 
-  # Filter to find your custom AMI
+  # Filter to find your custom 
+  #
+  #
   filter {
     name   = "name"
     values = [var.app_image_name] # Adjust this to your AMI name
