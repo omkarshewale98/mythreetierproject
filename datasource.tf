@@ -7,6 +7,7 @@ data "aws_ami" "web-server-ami" {
   owners      = ["self"]
 
   # Filter to find your custom AMI
+    # Filter to find your custom AMI
   filter {
     name   = "name"
     values = [var.web_image_name] # Adjust this to your AMI name
